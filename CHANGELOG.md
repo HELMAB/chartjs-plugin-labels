@@ -1,5 +1,8 @@
 # Change Log
 
+## v5.0.1-beta / 2024-02-02
+- Fix animate pie percentage number
+
 ## v5.0.1-beta / 2023-07-03
 - Fix main in package.json
 - Update deps

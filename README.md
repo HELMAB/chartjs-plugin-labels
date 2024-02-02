@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/ded2c349739e4d87130b/maintainability)](https://codeclimate.com/github/DavideViolante/chart.js-plugin-labels-dv/maintainability) ![npm](https://img.shields.io/npm/dm/chart.js-plugin-labels-dv) [![Donate](https://img.shields.io/badge/paypal-donate-179BD7.svg)](https://www.paypal.me/dviolante)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ded2c349739e4d87130b/maintainability)](https://codeclimate.com/github/HELMAB/chart.js-plugin-labels-dv/maintainability) ![npm](https://img.shields.io/npm/dm/chart.js-plugin-labels-dv) [![Donate](https://img.shields.io/badge/paypal-donate-179BD7.svg)](https://www.paypal.me/dviolante)
 
 [![NPM](https://nodei.co/npm/chart.js-plugin-labels-dv.png)](https://nodei.co/npm/chart.js-plugin-labels-dv/)
 
@@ -9,8 +9,8 @@
 - [Demo](http://emn178.github.io/chartjs-plugin-labels/samples/demo/) from the original repo using Chart.js v2.x, but it's almost the same.
 
 ## Download
-- [Compressed](https://raw.github.com/DavideViolante/chartjs-plugin-labels/master/dist/chartjs-plugin-labels.min.js)  
-- [Uncompressed](https://raw.github.com/DavideViolante/chartjs-plugin-labels/master/src/chartjs-plugin-labels.js)
+- [Compressed](https://raw.github.com/HELMAB/chartjs-plugin-labels/master/dist/chartjs-plugin-labels.min.js)  
+- [Uncompressed](https://raw.github.com/HELMAB/chartjs-plugin-labels/master/src/chartjs-plugin-labels.js)
 
 ## CDN Link
 You can put the below link in the script tag
@@ -128,7 +128,7 @@ Chart.defaults.plugins.labels = {
 ```
 
 ### React
-From https://github.com/DavideViolante/chartjs-plugin-labels/issues/5#issuecomment-1237995604
+From https://github.com/HELMAB/chartjs-plugin-labels/issues/5#issuecomment-1237995604
 ```ts
 import React from 'react';
 import { Chart } from 'chart.js';
@@ -145,13 +145,13 @@ export const LabelPluginProvider: React.FC = ({ children }) => {
 ```
 
 ### Vue
-From https://github.com/DavideViolante/chartjs-plugin-labels/issues/2#issuecomment-1711298993
+From https://github.com/HELMAB/chartjs-plugin-labels/issues/2#issuecomment-1711298993
 ```ts
 import { Chart as ChartJS } from 'chart.js'
 import { getChartLabelPlugin } from 'chart.js-plugin-labels-dv'
 ChartJS.register(getChartLabelPlugin())
 ```
-Or, from https://github.com/DavideViolante/chartjs-plugin-labels/issues/2#issuecomment-1483948596
+Or, from https://github.com/HELMAB/chartjs-plugin-labels/issues/2#issuecomment-1483948596
 ```ts
 import Chart from "chart.js/auto";
 import * as helpers from "chart.js/helpers";
@@ -228,4 +228,4 @@ Test it out with data from the official Chart.js website: https://www.chartjs.or
 
 ## Contact
 The project's website is located at https://github.com/emn178/chartjs-plugin-labels  
-Authors: Chen, Yi-Cyuan (emn178@gmail.com), Davide Violante, eduard-landclan
+Authors: Chen, Yi-Cyuan (emn178@gmail.com), Davide Violante, eduard-landclan, Hel Mab

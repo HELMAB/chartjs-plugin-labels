@@ -384,8 +384,7 @@ export class ChartLabel {
     let percentage: number;
     if (
       this.isChartType(this.chart, 'polarArea') ||
-      this.isChartType(this.chart, 'doughnut') ||
-      this.isChartType(this.chart, 'pie')
+      this.isChartType(this.chart, 'doughnut')
     ) {
       if (!this.total) {
         this.total = 0;
@@ -402,6 +401,8 @@ export class ChartLabel {
         }
       }
       percentage = (dataset.data[index] / this.barTotal[index]) * 100;
+    } else if (this.isChartType(this.chart, 'pie')) {
+      percentage = (element.circumference / (2* Math.PI)) * 100;
     } else {
       const circumference: number = (
         this.chart.config as ChartConfiguration<ChartWithCircumference>

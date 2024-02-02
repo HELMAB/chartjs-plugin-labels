@@ -1,8 +1,8 @@
 /**
- * [chartjs-plugin-labels]{@link https://github.com/DavideViolante/chartjs-plugin-labels}
+ * [chartjs-plugin-labels]{@link https://github.com/HELMAB/chartjs-plugin-labels}
  *
  * @version 5.0.1-beta
- * @author Chen, Yi-Cyuan [emn178@gmail.com], Davide Violante, Yousef Altaher
+ * @author Chen, Yi-Cyuan [emn178@gmail.com], Davide Violante, Yousef Altaher, Mab Hel [mabhelitc@gmail.com]
  * @copyright Chen, Yi-Cyuan 2017-2018
  * @license MIT
  */
@@ -254,7 +254,7 @@
       return this.percentage;
     }
     let percentage;
-    if (this.chart.config.type === 'polarArea' || this.chart.config.type === 'doughnut' || this.chart.config.type === 'pie') {
+    if (this.chart.config.type === 'polarArea' || this.chart.config.type === 'doughnut') {
       if (!this.total) {
         this.total = 0;
         for (let i = 0; i < dataset.data.length; ++i) {
@@ -270,6 +270,8 @@
         }
       }
       percentage = dataset.data[index] / this.barTotal[index] * 100;
+    } else if (this.chart.config.type === 'pie') {
+      percentage = (element.circumference / (2 * Math.PI)) * 100;
     } else {
       percentage = element.circumference / this.chart.config.options.circumference * 100;
     }

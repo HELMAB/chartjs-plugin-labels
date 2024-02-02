@@ -1,5 +1,5 @@
 {
-  "name": "chart.js-plugin-labels-dv",
+  "name": "chart.js-plugin-labels-hb",
   "version": "5.0.1-beta",
   "description": "Chart.js plugin to display labels on pie, doughnut and polar area chart.",
   "main": "dist/esm/index.js",
@@ -13,7 +13,7 @@
   "types": "./dist/types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DavideViolante/chartjs-plugin-labels.git"
+    "url": "https://github.com/HELMAB/chartjs-plugin-labels.git"
   },
   "keywords": [
     "chart",
@@ -22,10 +22,10 @@
     "plugin"
   ],
   "license": "MIT",
-  "author": "Chen, Yi-Cyuan <emn178@gmail.com>, Davide Violante",
-  "homepage": "https://github.com/DavideViolante/chartjs-plugin-labels",
+  "author": "Hel Mab <mabhelitc@gmail.com>, Hel Mab",
+  "homepage": "https://github.com/HELMAB/chartjs-plugin-labels",
   "bugs": {
-    "url": "https://github.com/DavideViolante/chartjs-plugin-labels/issues"
+    "url": "https://github.com/HELMAB/chartjs-plugin-labels/issues"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.62.0",

@@ -229,7 +229,7 @@
             return this.percentage;
         }
         var percentage;
-        if (this.chart.config.type === 'polarArea' || this.chart.config.type === 'doughnut' || this.chart.config.type === 'pie') {
+        if (this.chart.config.type === 'polarArea' || this.chart.config.type === 'doughnut') {
             if (!this.total) {
                 this.total = 0;
                 for (var i = 0; i < dataset.data.length; ++i) {
@@ -246,6 +246,9 @@
                 }
             }
             percentage = dataset.data[index] / this.barTotal[index] * 100;
+        }
+        else if (this.chart.config.type === 'pie') {
+            percentage = (element.circumference / (2 * Math.PI)) * 100;
         }
         else {
             percentage = element.circumference / this.chart.config.options.circumference * 100;
