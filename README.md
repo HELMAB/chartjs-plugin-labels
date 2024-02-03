@@ -18,7 +18,7 @@ You can put the below link in the script tag
     https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js
 
 ## Install from NPM
-- `npm i chart.js-plugin-labels-dv`
+- `npm i chart.js-plugin-labels-hb`
 
 ## Usage
 JavaScript
