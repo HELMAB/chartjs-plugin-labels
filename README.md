@@ -1,6 +1,6 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/ded2c349739e4d87130b/maintainability)](https://codeclimate.com/github/HELMAB/chart.js-plugin-labels-dv/maintainability) ![npm](https://img.shields.io/npm/dm/chart.js-plugin-labels-dv) [![Donate](https://img.shields.io/badge/paypal-donate-179BD7.svg)](https://www.paypal.me/dviolante)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ded2c349739e4d87130b/maintainability)](https://codeclimate.com/github/HELMAB/chart.js-plugin-labels-hb/maintainability) ![npm](https://img.shields.io/npm/dm/chart.js-plugin-labels-hb) [![Donate](https://img.shields.io/badge/paypal-donate-179BD7.svg)](https://www.paypal.me/dviolante)
 
-[![NPM](https://nodei.co/npm/chart.js-plugin-labels-dv.png)](https://nodei.co/npm/chart.js-plugin-labels-dv/)
+[![NPM](https://nodei.co/npm/chart.js-plugin-labels-hb.png)](https://nodei.co/npm/chart.js-plugin-labels-hb/)
 
 # Chart.js Plugin Labels for Chart.js v4+
 [Chart.js](https://www.chartjs.org/) plugin to display labels on pie, doughnut and polar area chart. Forked from [emn178/chartjs-plugin-labels](https://github.com/emn178/chartjs-plugin-labels).
@@ -15,7 +15,7 @@
 ## CDN Link
 You can put the below link in the script tag
 
-    https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js
+    https://unpkg.com/chart.js-plugin-labels-hb/dist/chartjs-plugin-labels.min.js
 
 ## Install from NPM
 - `npm i chart.js-plugin-labels-hb`
@@ -138,7 +138,7 @@ export const LabelPluginProvider: React.FC = ({ children }) => {
   React.useEffect(() => {
     window.Chart = Chart;
     Chart.helpers = helpers;
-    import('chart.js-plugin-labels-dv');
+    import('chart.js-plugin-labels-hb');
   }, []);
   return children;
 };
@@ -148,7 +148,7 @@ export const LabelPluginProvider: React.FC = ({ children }) => {
 From https://github.com/HELMAB/chartjs-plugin-labels/issues/2#issuecomment-1711298993
 ```ts
 import { Chart as ChartJS } from 'chart.js'
-import { getChartLabelPlugin } from 'chart.js-plugin-labels-dv'
+import { getChartLabelPlugin } from 'chart.js-plugin-labels-hb'
 ChartJS.register(getChartLabelPlugin())
 ```
 Or, from https://github.com/HELMAB/chartjs-plugin-labels/issues/2#issuecomment-1483948596
@@ -161,7 +161,7 @@ Then inside the `created()` hook:
 async created() {
   window.Chart = Chart;
   Chart.helpers = helpers;
-  awaitimport("chart.js-plugin-labels-dv");
+  awaitimport("chart.js-plugin-labels-hb");
 }
 ```
 ### Angular
@@ -177,7 +177,7 @@ You would need to create your own chart component.
 Importing should be straightforward
 ```ts
 import Chart from 'chart.js/auto';
-import { getChartLabelPlugin, PLUGIN_ID } from 'chart.js-plugin-labels-dv';
+import { getChartLabelPlugin, PLUGIN_ID } from 'chart.js-plugin-labels-hb';
 ```
 
 ```ts
@@ -209,7 +209,7 @@ For fixing the module failed compilation error I have updated tsconfig as follow
 
 ```
 Error: Module build failed (from ./node_modules/@ngtools/webpack/src/ivy/index.js):
-Error: /node_modules/chart.js-plugin-labels-dv/src/chart-label.ts is missing from the TypeScript compilation.
+Error: /node_modules/chart.js-plugin-labels-hb/src/chart-label.ts is missing from the TypeScript compilation.
 Please make sure it is in your tsconfig via the 'files' or 'include' property.
 ```
 
